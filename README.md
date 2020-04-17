@@ -6,39 +6,39 @@ The program is still under development and has some issues that I am fixing grad
 There is some dummy data inputted to help you see the program's functionality.
 
 It features:
-*Liquid asset page
--adding, deleting and editing assets in five currencies (EUR, GBP, USD, CHF, PLN)
+1. Liquid asset page
+- adding, deleting and editing assets in five currencies (EUR, GBP, USD, CHF, PLN)
  with a short note, you can add negative numbers if you owe someone.
--each entry is displayed on scrollable canvas, with a summary on top
--to edit or delete entries right-click on it (you need to click on empty space as labels are not bound to event)
-*Shares page
--lets you add, edit or delete Shares, lets you add an alarm to share
--on top of the scrollable canvas - summary of your wallet (wallet worth, wallet net profit, up to seven biggest share packets in your wallet with their profile name, total worth, net profit, percentage of your wallet)
--bellow summary there is detailed info on every share packet you own with its current price, profit, the annual rate of return and more
--to edit or delete entries right-click on it (you need to click on empty space as labels are not bound to event)
--during editing share, if you add 'Exit price' and 'Exit date' this share is then transferred to 'Past transactions'
-*Past transactions page
--this page (unlike others) is only accessible through Shares page 
--on this page you can see shares you sold, they are displayed on scrollable canvas with a summary on top
-*Watched shares
--here you add companies you want to see detailed info on (quarterly reports, average price, net profit, etc.)
--from here you can also add an alarm to share
-*Summary page
--display summary of every currency
--display total shares worth
--display total wealth in PLN (foreign currencies to polish zloty by current exchange rate)
-*Settings page
--you can add your details to receive email or SMS
--set how often web gets scraped to update info on share price and currency rates
+- each entry is displayed on scrollable canvas, with a summary on top
+- to edit or delete entries right-click on it (you need to click on empty space as labels are not bound to event)
+2. Shares page
+- lets you add, edit or delete Shares, lets you add an alarm to share
+- on top of the scrollable canvas - summary of your wallet (wallet worth, wallet net profit, up to seven biggest share packets in your wallet with their profile name, total worth, net profit, percentage of your wallet)
+- bellow summary there is detailed info on every share packet you own with its current price, profit, the annual rate of return and more
+- to edit or delete entries right-click on it (you need to click on empty space as labels are not bound to event)
+- during editing share, if you add 'Exit price' and 'Exit date' this share is then transferred to 'Past transactions'
+3. Past transactions page
+- this page (unlike others) is only accessible through Shares page 
+- on this page you can see shares you sold, they are displayed on scrollable canvas with a summary on top
+4. Watched shares
+- here you add companies you want to see detailed info on (quarterly reports, average price, net profit, etc.)
+- from here you can also add an alarm to share
+5. Summary page
+- display summary of every currency
+- display total shares worth
+- display total wealth in PLN (foreign currencies to polish zloty by current exchange rate)
+6. Settings page
+- you can add your details to receive email or SMS
+- set how often web gets scraped to update info on share price and currency rates
 
 Known bugs (and crimes against 'best practice'):
--takes looooong time to start when on-line (i am working on it)
--to secure input, I restricted the share names to those in a 'gpw_profiles.txt' file,
+- takes looooong time to start when on-line (i am working on it)
+- to secure input, I restricted the share names to those in a 'gpw_profiles.txt' file,
 I want to at least do an auto-fill in entry-fields or make it more user friendly otherwise
--ambiguous function names
--there is a lot of data tossing back and forth
--change list() to dict() where possible
--adding share when not on-line is not possible
+- ambiguous function names
+- there is a lot of data tossing back and forth
+- change list() to dict() where possible
+- adding share when not on-line is not possible
 
 Note: 
 I decided to make this program because when buying shares my bank didn't show me all the details ie.
