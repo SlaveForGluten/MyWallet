@@ -3,7 +3,7 @@
 This program is a web-scraper and a database manager to help me conveniently access and edit data using Tkinter GUI. It scraps net for info about GPW (Warsaw Stock Market) companies, current price, quarterly reports, etc. and currency rates for set currencies (most popular currencies to PLN).
 It also allows you to set an alarm (when the share reaches set price) and receive on-screen notifications and/or email and/or SMS message (for SMS you need to have an API key). It allows you to add shares to your 'wallet'. Keeps the history of your transactions. Calculates your total costs, profit, annual rate of return and many more.
 The program is still under development and has some issues that I am fixing gradually.
-There is some dummy data inputted to help you see the program's functionality.
+There is some dummy data inputted to help you see the program's functionality. Run 'run_me.py' to start the program.
 
 It features:
 1. Liquid asset page
@@ -31,7 +31,7 @@ It features:
 - you can add your details to receive email or SMS
 - set how often web gets scraped to update info on share price and currency rates
 
-Known bugs (and crimes against 'best practice'):
+Known bugs (and crimes against best practice):
 - takes looooong time to start when on-line (i am working on it)
 - to secure input, I restricted the share names to those in a 'gpw_profiles.txt' file,
 I want to at least do an auto-fill in entry-fields or make it more user friendly otherwise
